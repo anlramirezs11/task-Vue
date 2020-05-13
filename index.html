@@ -5,10 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tareas en Vue</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 
 <body>
+    <!-- Vue.js component -->
+    <div id="task-app" class="container">
+        {{nameApp}}
+
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">Done</th>
+                    <th scope="col">Task</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                </tr>        
+            </tbody>
+        </table>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./app.js"></script>
 </body>
+
 </html>
