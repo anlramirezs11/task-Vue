@@ -19,15 +19,19 @@
                 <tr>
                     <th scope="col">Done</th>
                     <th scope="col">Task</th>
-                    <th scope="col">Delete</th>
+                    <th scope="col"></th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th>1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                </tr>        
+                <tr v-for="tarea in tareas">
+                    <th>
+                        <input type="checkbox" name="" id="" v-model="tarea.done">
+                    </th>
+                    <td>{{tarea.title}}</td>
+                    <td>
+                        <button type="button" class="btn btn-primary">Delete</button>
+                    </td>
+                </tr>
             </tbody>
         </table>
     </div>
