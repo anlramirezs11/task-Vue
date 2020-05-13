@@ -1,0 +1,11 @@
+.container h1{
+    margin: 50px    
+}
+
+.container table, .container form{
+    margin: 40px    
+}
+
+.container h1, .container form{
+    text-align: center;  
+}

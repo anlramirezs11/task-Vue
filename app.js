@@ -37,6 +37,7 @@ new Vue({
                 title: this.tareas.title,
                 done: false
             });
+            this.tareas.title = '';
         }
     }
 });

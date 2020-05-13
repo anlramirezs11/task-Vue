@@ -7,18 +7,17 @@
     <title>Tareas en Vue</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <!-- Vue.js component -->
     <div id="task-app" class="container">
         <h1>{{nameApp}}</h1>
-
         <form v-on:submit="addTask">
-            <input type="text" v-model="tareas.title">
+            <input type="text" v-model="tareas.title" placeholder="Add task...">
             <input type="submit" value="Add Task" class="btn btn-primary">
         </form>
-
         <table class="table table-dark">
             <thead>
                 <tr>
