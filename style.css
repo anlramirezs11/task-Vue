@@ -9,3 +9,7 @@
 .container h1, .container form{
     text-align: center;  
 }
+
+.taskDone {
+    text-decoration: line-through;
+}

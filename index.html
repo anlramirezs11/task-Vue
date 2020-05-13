@@ -31,7 +31,7 @@
                     <th>
                         <input type="checkbox" name="" id="" v-model="tarea.done">
                     </th>
-                    <td>{{tarea.title}}</td>
+                    <td :class="{taskDone: tarea.done}">{{tarea.title}}</td>
                     <td>
                         <button type="button" class="btn btn-primary" v-on:click="deleteTask(tarea)">Delete</button>
                     </td>
