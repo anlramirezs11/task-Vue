@@ -19,7 +19,7 @@ var tareas = [
         title: "Task 5",
         done: false
     }
-]
+];
 
 new Vue({
     el: '#task-app',
@@ -28,8 +28,8 @@ new Vue({
         tareas: tareas
     },
     methods: {
-        deleteTask: () => {
-
+        deleteTask: (tarea) => {
+            tareas.splice(tareas.indexOf(tarea), 1);
         }
     }
 })
