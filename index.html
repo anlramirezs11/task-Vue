@@ -12,7 +12,12 @@
 <body>
     <!-- Vue.js component -->
     <div id="task-app" class="container">
-        {{nameApp}}
+        <h1>{{nameApp}}</h1>
+
+        <form v-on:submit="addTask">
+            <input type="text" v-model="tareas.title">
+            <input type="submit" value="Add Task" class="btn btn-primary">
+        </form>
 
         <table class="table table-dark">
             <thead>

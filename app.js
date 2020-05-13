@@ -1,11 +1,11 @@
 var tareas = [
     {
         title: "Task 1",
-        done: true
+        done: false
     },
     {
         title: "Task 2",
-        done: true
+        done: false
     },
     {
         title: "Task 3",
@@ -24,12 +24,19 @@ var tareas = [
 new Vue({
     el: '#task-app',
     data: {
-        nameApp: 'Tareas Vue',
+        nameApp: 'Administrador de tareas con Vue.js',
         tareas: tareas
     },
     methods: {
         deleteTask: (tarea) => {
             tareas.splice(tareas.indexOf(tarea), 1);
+        },
+        addTask: (e) => {
+            e.preventDefault();
+            this.tareas.push({
+                title: this.tareas.title,
+                done: false
+            });
         }
     }
-})
+});
